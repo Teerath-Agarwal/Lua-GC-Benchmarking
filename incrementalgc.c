@@ -13,14 +13,17 @@ int main() {
     }
 
     luaL_openlibs(L);
-    
     printf("%d: INFO: Running with Incremental GC...\n", __LINE__);
-    lua_gc(L, LUA_GCINC, 0, 0);
+    lua_gc(L, LUA_GCINC, 0, 0, 0);
 
     if (luaL_dofile(L, TEST_FILE)) {
         printf("%d: ERROR: %s\n", __LINE__, lua_tostring(L, -1));
         lua_pop(L, 1);
     }
+
+    lua_getglobal(L, "test");
+    if (!lua_isfunction(L, -1) || lua_pcall(L, 0, 0, 0) != LUA_OK)
+        printf("%d: ERROR: Error calling 'test': %s\n", __LINE__, lua_tostring(L, -1));
 
     lua_close(L);
     return 0;
