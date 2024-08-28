@@ -1,0 +1,14 @@
+Performance counter stats for './incrementalgc':
+
+68,96,69,269      cycles:u
+1,15,70,09,008      instructions:u                   #    1.68  insn per cycle
+22,61,90,711      branches:u
+4,05,142      branch-misses:u                  #    0.18% of all branches
+2,15,93,157      cache-references:u
+56,37,374      cache-misses:u                   #   26.11% of all cache refs
+11,031      page-faults:u
+
+0.189589600 seconds time elapsed
+
+0.166702000 seconds user
+0.021950000 seconds sys

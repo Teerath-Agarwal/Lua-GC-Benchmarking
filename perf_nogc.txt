@@ -1,0 +1,14 @@
+Performance counter stats for './nogc':
+
+20,60,02,894      cycles:u
+73,77,60,202      instructions:u                   #    3.58  insn per cycle
+13,57,16,628      branches:u
+3,51,626      branch-misses:u                  #    0.26% of all branches
+26,59,151      cache-references:u
+46,066      cache-misses:u                   #    1.73% of all cache refs
+16,263      page-faults:u
+
+0.078877790 seconds time elapsed
+
+0.043677000 seconds user
+0.034726000 seconds sys

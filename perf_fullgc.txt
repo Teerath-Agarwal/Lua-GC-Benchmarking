@@ -1,0 +1,14 @@
+Performance counter stats for './fullgc':
+
+26,31,60,089      cycles:u
+94,21,90,670      instructions:u                   #    3.58  insn per cycle
+18,02,06,180      branches:u
+3,54,221      branch-misses:u                  #    0.20% of all branches
+46,25,357      cache-references:u
+1,97,705      cache-misses:u                   #    4.27% of all cache refs
+16,263      page-faults:u
+
+0.092320214 seconds time elapsed
+
+0.060555000 seconds user
+0.031282000 seconds sys

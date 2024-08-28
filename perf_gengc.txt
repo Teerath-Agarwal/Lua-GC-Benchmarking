@@ -1,0 +1,14 @@
+Performance counter stats for './generationalgc':
+
+59,00,14,534      cycles:u
+1,12,98,70,302      instructions:u                   #    1.91  insn per cycle
+22,16,23,219      branches:u
+3,96,670      branch-misses:u                  #    0.18% of all branches
+2,07,15,716      cache-references:u
+51,30,017      cache-misses:u                   #   24.76% of all cache refs
+9,665      page-faults:u
+
+0.160735613 seconds time elapsed
+
+0.131956000 seconds user
+0.027933000 seconds sys
