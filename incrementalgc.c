@@ -25,6 +25,7 @@ int main() {
     if (!lua_isfunction(L, -1) || lua_pcall(L, 0, 0, 0) != LUA_OK)
         printf("%d: ERROR: Error calling 'test': %s\n", __LINE__, lua_tostring(L, -1));
 
+    lua_gc(L, LUA_GCSTEP);
     lua_close(L);
     return 0;
 }
